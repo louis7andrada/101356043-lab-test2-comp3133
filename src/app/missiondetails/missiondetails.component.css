@@ -1,0 +1,50 @@
+/* missiondetails.component.css */
+:host {
+  display: block;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  background: #fff;
+}
+
+h2 {
+  color: #003a60;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.detail-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.detail-label {
+  font-weight: 500;
+  color: #555;
+}
+
+.detail-value {
+  font-weight: 300;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.launch-details {
+  margin-top: 20px;
+}
+
+.image-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.launch-image {
+  width: 100%;
+  max-width: 200px; /* You may need to adjust this */
+  height: auto;
+  border-radius: 4px;
+}
+
+/* You can add more styles here for other elements */

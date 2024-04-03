@@ -1,0 +1,61 @@
+/* Style for the filter panel */
+.filter-panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #f3f3f3;
+}
+
+.filter-input {
+  flex-grow: 1;
+  margin-right: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.filter-button {
+  padding: 10px 20px;
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.filter-button:hover {
+  background-color: #003d82;
+}
+
+/* Style for the missions container */
+.missions-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.mission {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.mission h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.mission p {
+  margin: 10px 0;
+  color: #666;
+}
+
+.mission-patch {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}

@@ -1,0 +1,22 @@
+<div *ngIf="launchDetails; else noDetails">
+  <div class="mission-header">
+    <h2>{{ launchDetails.mission_name }}</h2>
+    <img [src]="launchDetails.links.mission_patch_small" alt="{{ launchDetails.mission_name }} patch" class="mission-patch">
+  </div>
+
+  <div class="mission-info">
+    <h3>Launch Details</h3>
+    <p><strong>Date:</strong> {{ launchDetails.launch_date_utc | date:'medium' }}</p>
+    <p><strong>Rocket:</strong> {{ launchDetails.rocket.rocket_name }}</p>
+    <p><strong>Launch Site:</strong> {{ launchDetails.launch_site.site_name_long }}</p>
+    <div *ngIf="launchDetails.details">
+      <h4>Mission Details:</h4>
+      <p>{{ launchDetails.details }}</p>
+    </div>
+    <a href="{{ launchDetails.links.article_link }}" target="_blank">More Info on Launch Details</a>
+  </div>
+</div>
+
+<ng-template #noDetails>
+  <p>No launch details available. Please select a mission to view details.</p>
+</ng-template>
