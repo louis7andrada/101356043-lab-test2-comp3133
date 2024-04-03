@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { Launch } from '../models/launch.model'; // Adjust the path as necessary
+import { Launch } from '../models/launch.model';
 
 @Injectable({
   providedIn: 'root'

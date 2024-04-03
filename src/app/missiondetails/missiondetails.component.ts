@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Launch } from '../models/launch.model'; // assuming you have defined a Launch interface
+import { Launch } from '../models/launch.model';
 
 @Component({
   selector: 'app-missiondetails',
@@ -12,7 +12,7 @@ export class MissiondetailsComponent implements OnInit {
     mission_name: '',
     launch_year: '',
     launch_date_utc: '',
-    launch_site: { site_name_long: '' }, // Corrected property name
+    launch_site: { site_name_long: '' },
     rocket: { rocket_name: '' },
     links: { mission_patch_small: '' },
     details: ''
@@ -21,8 +21,6 @@ export class MissiondetailsComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    // You might want to handle additional initialization here
   }
 
-  // Add any additional methods or logic as needed for your component
 }

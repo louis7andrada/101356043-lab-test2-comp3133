@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { SpacexService } from '../services/spacex.service'; // ensure you have this service
-import { Launch } from '../models/launch.model'; // assuming you have defined a Launch model
+import { SpacexService } from '../services/spacex.service';
+import { Launch } from '../models/launch.model';
 
 @Component({
   selector: 'app-missionlist',
@@ -22,7 +22,7 @@ export class MissionlistComponent implements OnInit {
     this.spacexService.getLaunches().subscribe(
       (data: Launch[]) => {
         this.launches = data;
-        this.filteredLaunches = data; // Initialize filteredLaunches with all data
+        this.filteredLaunches = data;
       },
       error => {
         // Handle the error here

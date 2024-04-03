@@ -29,7 +29,6 @@ describe('MissionlistComponent', () => {
     // mockLaunches = [
     //  { flight_number: 1, mission_name: 'Test Flight 1', launch_year: '2020', details: 'Details 1', links: { mission_patch_small: 'url1' } },
     //  { flight_number: 2, mission_name: 'Test Flight 2', launch_year: '2021', details: 'Details 2', links: { mission_patch_small: 'url2' } },
-    //  // Add more mock launch objects as needed
     // ];
 
     // Mock the getLaunches method to return mock launches

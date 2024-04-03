@@ -1,7 +1,7 @@
 import { TestBed } from '@angular/core/testing';
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
 import { SpacexService } from './spacex.service';
-import { Launch } from '../models/launch.model'; // Adjust the path as necessary
+import { Launch } from '../models/launch.model';
 
 describe('SpacexService', () => {
   let service: SpacexService;
@@ -17,7 +17,7 @@ describe('SpacexService', () => {
   });
 
   afterEach(() => {
-    httpMock.verify(); // Verifies that no requests are outstanding.
+    httpMock.verify();
   });
 
   it('should be created', () => {

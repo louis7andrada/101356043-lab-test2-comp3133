@@ -42,9 +42,8 @@ h2 {
 
 .launch-image {
   width: 100%;
-  max-width: 200px; /* You may need to adjust this */
+  max-width: 200px;
   height: auto;
   border-radius: 4px;
 }
 
-/* You can add more styles here for other elements */
